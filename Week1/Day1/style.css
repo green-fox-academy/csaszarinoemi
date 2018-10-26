@@ -1,0 +1,45 @@
+body{
+margin: 0 auto;
+font-family: Courier;
+background-image:url("topography.png")
+}
+h1{
+    font-size: 50px;
+}
+h1, h2, h3, h4 {
+    font-family: Merriweather;
+}
+a, h2 {
+    color:#ff0099;
+}
+a {
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+article {
+    padding: 0 10%;
+}
+div {
+    background-color:#333333;
+    text-align: right;
+    height: 50px;
+}
+span {
+    margin-right: 10%;
+   
+}
+h3 {
+    text-align: center;
+    margin: 100px, auto;
+}
+img {
+    float:left;
+    margin-left: 10%;
+    height: 44px;
+    width: 44px;
+    padding-top: 3px;
+}
+#dots {
+    text-align: center
+}
