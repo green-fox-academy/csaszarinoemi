@@ -1,4 +1,6 @@
 'use strict'
+export{};
+
 let a: number = 3;
 // make it bigger by 10
 a += 10;
