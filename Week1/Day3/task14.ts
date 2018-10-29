@@ -34,6 +34,14 @@ let isBonus: boolean = false;
 // if credits are smaller than 50,
 // and is_bonus is false decrement c by 1
 // if is_bonus is true c should remain the same
+if ( 50 <= credits && !isBonus) {
+    c-=2;
+} else if (50> credits && !isBonus) { 
+    c--;
+} else {
+    c===c
+}
+
 
 console.log(c);
 
@@ -47,5 +55,11 @@ let out3: string = '';
 // if time is more than 200
 // set out3 to "Time out"
 // otherwise set out3 to "Run Forest Run!"
-
+if ( d % 4 === 0 && time <= 200) {
+    out3 = "check";
+} else if ( time > 200) {
+    out3 = "Time out";
+} else {
+    out3 = "Run Forest Run"
+}
 console.log(out3);
