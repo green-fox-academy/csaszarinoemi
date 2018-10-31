@@ -1,5 +1,5 @@
 'use strict';
-export{};
+export { };
 
 // -  Create a string variable named `typo` and assign the value `Chinchill` to it
 // -  Write a function called `appendAFunc` that gets a string as an input,
@@ -7,7 +7,22 @@ export{};
 // -  Print the result of `appendAFunc(typo)`
 
 let typo: string = "Chinchill";
+function appendAFunc(e: string) {
+    e += "a";
+    return e;
+} 
+console.log(appendAFunc(typo));
+
+
+
+
+
+
+
+/*
+let typo: string = "Chinchill";
 function appendAFunc(n: string) : string {
     return (n + "a");
 }
 console.log(appendAFunc(typo));
+*/
