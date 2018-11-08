@@ -8,9 +8,10 @@ let shopItems: any[] = ['Cupcake', 2, 'Brownie', false];
 // Create a function called sweets() which takes the list as a parameter.
 // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
 
-function sweets(list: any[]) {
-  let sweetlist = list.splice(1, 1, "Croissant").splice(3, 1, "Ice Cream");
- return list
+function  sweets(list: any[]){
+   list.splice(1, 1, 'Croissant'); //we need to put into 2 separate lines, not just put after each other
+   list.splice(3, 1, 'Ice Cream');
+  return list
 }
 console.log(sweets(shopItems));
 export = sweets;
