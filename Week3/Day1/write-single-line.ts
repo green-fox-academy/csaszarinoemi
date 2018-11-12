@@ -6,9 +6,9 @@
 export{};
 const fs = require('fs');
 
-function writeToFile(fileName: string, data: string) {
+function writeToFile(fileName: string, data: string): void {
   try {
-  return fs.appendFileSync(fileName, data);
+  fs.appendFileSync(fileName, data);
 } catch(e) {
   console.log('Unable to write file: my-file.txt');
   return null;
