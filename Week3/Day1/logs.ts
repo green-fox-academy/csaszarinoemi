@@ -25,6 +25,7 @@ function copyIP(fileName) {
   }
   return FinalIPArry
 }
+copyIP('log.txt');
 
 // Write a function that returns the GET / POST request ratio.
 
