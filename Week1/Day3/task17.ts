@@ -20,5 +20,5 @@ let number: number = 15;
 // 9 * 15 = 135
 // 10 * 15 = 150
 for (let a: number = 1; a <= 10; a++) {
-    console.log( a + " * 15 = " + (a*15))
+    console.log( a + " * 15 = " + (a * 15));
 }

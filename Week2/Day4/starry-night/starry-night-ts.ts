@@ -16,9 +16,9 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 function starCreator() {
 
-  let c = randomNum(0, 255);
-  let onePoint = randomNum(0, 600);
-  let anotherNum = randomNum(0, 400);
+  let c = randomNum(0, 255); 
+  let onePoint = randomNum(0, 600); 
+  let anotherNum = randomNum(0, 400); 
   ctx.fillStyle = `rgb(${c},${c},${c})`;
   ctx.fillRect(onePoint, anotherNum, 2, 2);
 }
@@ -26,8 +26,6 @@ function starCreator() {
 function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-
-
 
 for (let j = 0; j <= canvas.height; j++) {
   starCreator();

@@ -3,25 +3,7 @@
 const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
-/*ctx.strokeStyle = "green";
-ctx.beginPath();
-ctx.moveTo(40, 0);
-ctx.lineTo(0, 360);
-ctx.stroke();
-
-ctx.strokeStyle = "green";
-ctx.beginPath();
-ctx.moveTo(80, 0);
-ctx.lineTo(0, 320);
-ctx.stroke();
-
-ctx.strokeStyle = "green";
-ctx.beginPath();
-ctx.moveTo(120, 0);
-ctx.lineTo(0, 280);
-ctx.stroke(); */
-
-
+function divideCanvas()
 
 function drawPurpleLine(x) {
   ctx.strokeStyle = "purple";

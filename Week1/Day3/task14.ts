@@ -16,9 +16,9 @@ let out2: string = '';
 // if b is between 10 and 20 set out2 to "Sweet!"
 // if less than 10 set out2 to "Less!",
 // if more than 20 set out2 to "More!"
-if (b<10) {
+if ( b < 10 ) {
     out2="Less!"
-} else if (b>20) {
+} else if ( b > 20) {
     out2="More!"
 } else {
     out2="Sweet!"
@@ -35,11 +35,11 @@ let isBonus: boolean = false;
 // and is_bonus is false decrement c by 1
 // if is_bonus is true c should remain the same
 if ( 50 <= credits && !isBonus) {
-    c-=2;
+    c -= 2;
 } else if (50> credits && !isBonus) { 
     c--;
 } else {
-    c===c
+    c === c
 }
 
 
