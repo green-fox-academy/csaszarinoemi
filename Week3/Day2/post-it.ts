@@ -7,7 +7,7 @@ an orange with blue text: "Idea 1"
 a pink with black text: "Awesome"
 a yellow with green text: "Superb!" */
 
- class PostIt {
+class PostIt {
   backgroundColor: string;
   text: string;
   textColor: string;
@@ -17,7 +17,6 @@ a yellow with green text: "Superb!" */
     this.text = text;
     this.textColor = textColor;
   }
-
 }
 
 let postit1 = new PostIt('orange', 'Idea 1', 'blue');
