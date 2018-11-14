@@ -6,14 +6,15 @@ Every sharpie is created with a default 100 as inkAmount
 We can use() the sharpie objects
 which decreases inkAmount*/
 
-class Sharpie {
+ class Sharpie {
   color: string;
   width: number;
-  inkAmount: number = 100;
+  inkAmount: number;
 
-  constructor(color: string, width: number) {
+  constructor(color: string, width: number, inkAmount: number = 100) {
     this.color = color;
     this.width = width;
+    this.inkAmount = inkAmount
   }
   use() {
     this.inkAmount--;
@@ -25,10 +26,11 @@ let blueSharpie = new Sharpie('blue', 1.5);
 let pinkSharpie = new Sharpie('pink', 2.3);
 
 function usingYellow() {
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < 100; i++) {
     yellowSharpie.use();
   }
 }
 
 usingYellow();
 console.log(yellowSharpie);
+export{Sharpie, yellowSharpie, blueSharpie, pinkSharpie};
