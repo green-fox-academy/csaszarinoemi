@@ -34,12 +34,11 @@ class DiceSet {
       console.log(this.dices[index]);
     }
   }
+  getValue(index) {
+    return (this.dices[index]);
 
 }
-
-let diceSet = new DiceSet();
-diceSet.roll();
-
+}
 /*console.log("------------------");
 diceSet.reroll();
 diceSet.getCurrent();
@@ -48,24 +47,22 @@ diceSet.getCurrent(5);
 diceSet.reroll();
 diceSet.getCurrent();
 console.log("------------------");
-diceSet.reroll(4);
-diceSet.getCurrent();*/
+diceSet.reroll(4);*/
+//diceSet.getCurrent();
 
-let dicesAreSix: number[]= []
-let roundCounter: number = 0;
-//let firstRound: number[] = diceSet.roll();
-while (dicesAreSix.length !== 6) {
-  roundCounter++;
-  console.log(`RoundCounter ${roundCounter}`);
-  console.log(`DicesAreSix ${dicesAreSix}`);
 
-  diceSet.getCurrent();
-  for (let i = 0; i < diceSet.dices.length; i++) {
-    if (diceSet.dices[i] === 6) {
-      if (dicesAreSix.some(i))
-    } else {
+let diceSet = new DiceSet();
+let dicesAreSix: number = 0;
+
+diceSet.roll();
+
+
+while (!diceSet.dices.every(e => e === 6)) {
+  for (let i = 0; i < 6; i++) {
+    if (diceSet.getValue(i) !== 6) {
       diceSet.reroll(i);
     }
-
   }
 }
+
+console.log(diceSet.dices);
