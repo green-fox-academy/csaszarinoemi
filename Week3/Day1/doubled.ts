@@ -6,20 +6,35 @@ const fs = require('fs');
 function readFromFile(fileName: string): string {
   try {
     return fs.readFileSync(fileName, 'utf-8');
-  } catch(e) {
+  } catch (e) {
     console.log(e.message);
     return null;
   }
 }
 
-function decrypts(fileName){
+/*function decrypts(fileName){
   let cryptedFile: string []= readFromFile(fileName).split('');
 let secondArray: string[] = []
   for (let i = 0; i <= cryptedFile.length; i++) {
     if (i % 2 !== 0) {
-      secondArray.push(cryptedFile[i]);
+      secondArray.push(cryptedFile[i]);  
     } 
   } 
   return  console.log(secondArray.join(''));
 } 
 decrypts('duplicated-chars.txt');
+*/
+
+
+function decrypts(fileName) {
+  let cryptedFile: string[] = readFromFile(fileName).split('');
+  let secondArray: string[] = [];
+  cryptedFile.forEach((element, i) => {
+    if (i % 2 !== 0) {
+      secondArray.push(element);
+    }
+  });
+   return console.log(secondArray.join(''));
+}
+decrypts('duplicated-chars.txt');
+
