@@ -11,3 +11,15 @@ function readFromFile(fileName: string): string {
     return null;
   }
 }
+
+function decrypts(fileName){
+  let cryptedFile: string []= readFromFile(fileName).split('');
+let secondArray: string[] = []
+  for (let i = 0; i <= cryptedFile.length; i++) {
+    if (i % 2 !== 0) {
+      secondArray.push(cryptedFile[i]);
+    } 
+  } 
+  return  console.log(secondArray.join(''));
+} 
+decrypts('duplicated-chars.txt');
