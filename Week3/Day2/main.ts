@@ -15,17 +15,17 @@ let wildPokemon: Pokemon = new Pokemon('Oddish', 'leaf', 'water');
 console.log('I choose you, ');
 
 function initializePokemon(): Pokemon[] {
-    return [
-        new Pokemon('Balbasaur', 'leaf', 'water'),
-        new Pokemon('Pikatchu', 'electric', 'water'),
-        new Pokemon('Charizard', 'fire', 'leaf'),
-        new Pokemon('Balbasaur', 'water', 'fire'),
-        new Pokemon('Kingler', 'water', 'fire')
-    ];
+  return [
+    new Pokemon('Balbasaur', 'leaf', 'water'),
+    new Pokemon('Pikatchu', 'electric', 'water'),
+    new Pokemon('Charizard', 'fire', 'leaf'),
+    new Pokemon('Balbasaur', 'water', 'fire'),
+    new Pokemon('Kingler', 'water', 'fire')
+  ];
 }
 
 function choosePokemon() {
-  for (let i = 0; i < pokemonOfAsh.length; i ++){
+  for (let i = 0; i < pokemonOfAsh.length; i++) {
     if (pokemonOfAsh[i].effectiveAgainst === wildPokemon.type) {
       return pokemonOfAsh[i].name;
     }

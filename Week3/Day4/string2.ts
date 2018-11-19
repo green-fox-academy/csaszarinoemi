@@ -1,7 +1,7 @@
 // Given a string, compute recursively a new string where all the 'x' chars have been removed.
 export { };
 
-function changeLowercaseXToLetterY(textIn: string) {
+function changeLowercaseXToLetterY(textIn: string):string  {
 
   if (textIn.replace('x', '') === textIn) {
     return textIn;
