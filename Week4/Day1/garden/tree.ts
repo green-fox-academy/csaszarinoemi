@@ -6,6 +6,6 @@ export class Tree extends Plant {
     this.waterAbsorb = 0.4;
   }
   needWater() {
-    return super.needWater();
+    return this.waterLevel < 10;
   }
 }

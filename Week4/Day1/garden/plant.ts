@@ -11,6 +11,7 @@ export class Plant {
   }
   needWater() {
     return this.waterLevel < 5
-  }
+  } 
+
 }
 
