@@ -13,8 +13,8 @@ getGoal(){
   return (`${super.getGoal('My goal is: Be a junior software developer.')}`)
 }
 
-introduce(){
-return (`${super.introduce()}from ${previousOrganization} who skipped ${skippedDays} days from the course already`);
+introduce(name, age, gender, previousOrganization, skippedDays){
+return (`${super.introduce()}from ${this.previousOrganization} who skipped ${this.skippedDays} days from the course already`);
 }
 
 skipDays(numberOfDays){
