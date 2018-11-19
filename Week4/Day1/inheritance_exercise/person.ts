@@ -1,7 +1,7 @@
-class Person {
-  name: string;
-  age: number;
-  gender: string;
+export class Person {
+  protected name: string;
+  protected age: number;
+  protected gender: string;
 
   constructor(name = 'Jane Doe', age = 30, gender = 'female') {
     this.name = name;
@@ -10,7 +10,7 @@ class Person {
   }
 
   introduce() {
-    console.log(`Hi, I'm ${this.name}, ${this.age}, year old ${this.gender}.`)
+    console.log(`Hi, I'm ${this.name}, ${this.age}, year old ${this.gender}`)
   }
 
   getGoal() {
