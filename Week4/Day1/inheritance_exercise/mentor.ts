@@ -4,16 +4,16 @@ export class Mentor extends Person {
   
   protected level: string;
 
-  constructor(name: string, age: number, gender: string, level: string = 'intermediate'){
+  constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', level: string = 'intermediate'){
     super(name, age, gender);
     this.level = level
   }
 
   getGoal(){
-    return (`${super.getGoal}('My goal is: Educate brilliant junior software developers.')`);
+    console.log('My goal is: Educate brilliant junior software developers.');
   }
 
   introduce(){
-    return (`${super.introduce()} ${this.level} mentor`)
+    console.log(`Hi, I'm ${this.name}, ${this.age}, year old ${this.gender} ${this.level} mentor`);
   }
 }

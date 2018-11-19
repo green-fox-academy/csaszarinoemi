@@ -1,25 +1,25 @@
-import {Person} from "./person"
+import { Person } from "./person"
 
 export class Student extends Person {
 
-protected previousOrganization: string;
-protected skippedDays: number;
+  protected previousOrganization: string;
+  protected skippedDays: number;
 
-constructor(name:string, age: number, gender: string, previousOrganization = 'The School of Life', skippedDays = 0 ){
-  super(name, age, gender);
-  this.previousOrganization = previousOrganization;
-  this.skippedDays = skippedDays;
-}
+  constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', previousOrganization = 'The School of Life', skippedDays = 0) {
+    super(name, age, gender);
+    this.previousOrganization = previousOrganization;
+    this.skippedDays = skippedDays;
+  }
 
-getGoal(){
-  return (`${super.getGoal}('My goal is: Be a junior software developer.')`)
-}
+  getGoal() {
+    console.log('My goal is: Be a junior software developer.');
+  }
 
-introduce(){
-return (`${super.introduce()}from ${this.previousOrganization} who skipped ${this.skippedDays} days from the course already`);
-}
+  introduce() {
+    console.log(`Hi, I'm ${this.name}, ${this.age}, year old ${this.gender} from ${this.previousOrganization} who skipped ${this.skippedDays} days from the course already`);
+  }
 
-skipDays(numberOfDays){
-  this.skippedDays += numberOfDays;
-}
+  skipDays(numberOfDays) {
+    this.skippedDays += numberOfDays;
+  }
 }

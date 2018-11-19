@@ -1,25 +1,25 @@
 
-import {Person} from "./person"
+import { Person } from "./person"
 
 export class Sponsor extends Person {
   protected company: string;
   protected hiredStudents: number;
 
-  constructor(name: string, age: number, gender: string, company = 'Google', hiredStudents = 0) {
-    super(name, age, gender)
+  constructor(name: string = 'Jane Doe', age: number = 30, gender: string = 'female', company = 'Google', hiredStudents = 0) {
+    super(name, age, gender);
     this.company = company;
-    this.hiredStudents = hiredStudents; 
+    this.hiredStudents = hiredStudents;
   }
 
   introduce() {
-    return (` ${super.introduce()} who presents ${this.company} and hired ${this.hiredStudents} students so far`)
+    console.log(`Hi, I'm ${this.name}, ${this.age}, year old ${this.gender} who presents ${this.company} and hired ${this.hiredStudents} students so far`);
   }
 
-  hire(){
+  hire() {
     this.hiredStudents++;
   }
 
-  getGoal(){
-    return (`${super.getGoal}('Hire brilliant junior sofware developers')`)
+  getGoal() {
+    console.log('Hire brilliant junior sofware developers');
   }
 }
