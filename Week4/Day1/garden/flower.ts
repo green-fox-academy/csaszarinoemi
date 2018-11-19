@@ -9,6 +9,9 @@ constructor(color: string){
 }
 
 needWater() {
-  return super.needWater();
+  return this.waterLevel < 5;
+}
+getColor(){
+  return this.color;
 }
 }

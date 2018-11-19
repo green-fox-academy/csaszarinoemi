@@ -8,4 +8,7 @@ export class Tree extends Plant {
   needWater() {
     return this.waterLevel < 10;
   }
+  getColor(){
+    return this.color;
+  }
 }
