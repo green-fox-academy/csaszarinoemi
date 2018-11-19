@@ -1,3 +1,5 @@
+import {Person} from "./person"
+
 export class Student extends Person {
 
 protected previousOrganization: string;
@@ -10,10 +12,10 @@ constructor(name:string, age: number, gender: string, previousOrganization = 'Th
 }
 
 getGoal(){
-  return (`${super.getGoal('My goal is: Be a junior software developer.')}`)
+  return (`${super.getGoal}('My goal is: Be a junior software developer.')`)
 }
 
-introduce(name, age, gender, previousOrganization, skippedDays){
+introduce(){
 return (`${super.introduce()}from ${this.previousOrganization} who skipped ${this.skippedDays} days from the course already`);
 }
 

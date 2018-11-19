@@ -1,4 +1,7 @@
-class Sponsor extends Person {
+
+import {Person} from "./person"
+
+export class Sponsor extends Person {
   protected company: string;
   protected hiredStudents: number;
 
@@ -8,7 +11,7 @@ class Sponsor extends Person {
     this.hiredStudents = hiredStudents; 
   }
 
-  introduce(name, age, gender) {
+  introduce() {
     return (` ${super.introduce()} who presents ${this.company} and hired ${this.hiredStudents} students so far`)
   }
 
@@ -17,7 +20,6 @@ class Sponsor extends Person {
   }
 
   getGoal(){
-    return (`${super.getGoal('Hire brilliant junior sofware developers')}`)
+    return (`${super.getGoal}('Hire brilliant junior sofware developers')`)
   }
-}
 }

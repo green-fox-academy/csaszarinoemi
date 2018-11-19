@@ -1,4 +1,6 @@
-class Mentor extends Person {
+import {Person} from "./person"
+
+export class Mentor extends Person {
   
   protected level: string;
 
@@ -8,10 +10,10 @@ class Mentor extends Person {
   }
 
   getGoal(){
-    return (`${super.getGoal('My goal is: Educate brilliant junior software developers.')}`);
+    return (`${super.getGoal}('My goal is: Educate brilliant junior software developers.')`);
   }
 
-  introduce(name, age, gender, level){
+  introduce(){
     return (`${super.introduce()} ${this.level} mentor`)
   }
 }
