@@ -10,7 +10,7 @@ export class Sponsor {
     this.age = age;
     this.gender = gender;
     this.company = company;
-    this.hiredStudents = hiredStudents;
+    this.hiredStudents = hiredStudents; 
   }
 
   introduce(name, age, gender) {

@@ -34,5 +34,5 @@ for (let i = 0; i < 4; i++) {
 
 for (let person of people) {
   person.introduce();
-  student.getGoal();
+  person.getGoal();
 }
