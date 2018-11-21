@@ -1,3 +1,5 @@
+'use strict'
+
 import { Comparable } from "./compare";
 import {Printable} from "./../Printable"
 
@@ -16,7 +18,7 @@ class Domino implements Comparable, Printable {
     }
   }
   printAllFields(){
-    
+
   }
 }
 
