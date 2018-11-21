@@ -1,3 +1,5 @@
+'use strict'
+
 import {Animal} from "./animal";
 import {Reptile} from "./reptile";
 import {Mammal} from "./mammal";

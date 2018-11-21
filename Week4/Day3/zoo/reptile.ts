@@ -1,3 +1,5 @@
+'use strict'
+
 import { Animal } from "./animal";
 
 export class Reptile extends Animal {

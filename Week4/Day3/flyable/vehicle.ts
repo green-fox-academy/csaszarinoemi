@@ -1,4 +1,4 @@
-
+'use strict'
 
 export abstract class Vehicle {
   name: string;
