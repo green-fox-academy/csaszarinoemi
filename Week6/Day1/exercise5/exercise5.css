@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 100%;
   height: 1200px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .yellow {
-  width: 19%;
+  width: 210px;
   height: 100%;
   background-color: yellow;
 }
@@ -35,7 +35,7 @@
 }
 
 .purple {
-  width: 19%;
+  width: 210px;
   height: 100%;
   background-color: purple;
 }
