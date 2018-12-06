@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Workshop: innerHTML, textContent</title>
   </head>
+  <style>
+    .colored {
+      background-color: limegreen;
+    }
+  </style>
   <body>
     <ul>
       <li>placeholder</li>
@@ -17,10 +22,20 @@
       /*1) replace the list items' content with items from this list:
       ['apple', 'banana', 'cat', 'dog']*/
       
+      const array = ['apple', 'banana', 'cat', 'dog'];
+      placeHolders = document.querySelectorAll('li');
+      for(let i= 0; i < array.length; i++){
+        placeHolders[i].innerText = array[i];
+      } 
 
 
       /*2) change the <ul> element's background color to 'limegreen'
         - use css class to change the color instead of the style property*/
+        const array2 = document.querySelector('ul');
+       /* array2.style.backgroundColor = 'limegreen';*/ 
+
+        array2.classList.add('colored'); // a class neve legyen az h colored!
+
     </script>
     <!--OR
     <script src="content-2.js"></script> -->
