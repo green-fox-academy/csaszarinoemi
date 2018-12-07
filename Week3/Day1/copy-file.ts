@@ -27,5 +27,3 @@ function copyFile(fileFrom, fileTo): boolean {
   }
 }
 console.log(copyFile('my-file3.txt', 'my-file.txt'));
-
-

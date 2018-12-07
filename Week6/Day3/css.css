@@ -55,7 +55,7 @@
   background-color: hsla(205, 28%, 13%, 0.6);
   position: absolute;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: whitesmoke;
+  color: lightgray;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -69,6 +69,8 @@ h3 {
 
 p {
   margin: 5px;
+  font-size: 14px;
+  color: lightgrey;
 }
 
 .thumbnails{

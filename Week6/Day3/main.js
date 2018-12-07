@@ -104,6 +104,8 @@ footer.forEach((e, i) => {
   e.onclick = () => {
     main.setAttribute('src', `${myPics[i].url}`);
     imgCounter = i;
+    h3.innerText = `${myPics[i].title}`;
+    p.innerText = `${myPics[i].desc}`;
     //e.className += ''
     //e.className += ' footerBorder';
 
