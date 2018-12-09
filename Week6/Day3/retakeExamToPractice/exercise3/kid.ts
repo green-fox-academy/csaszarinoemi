@@ -23,6 +23,10 @@ export class Kid {
     return this.isHappy = true;
   }
 
+  getIsGood(): boolean {
+    return this.isGood;
+  }
+
   answerIfHappy(): string {
     if (this.isHappy){
       return 'I am happy!';
