@@ -12,7 +12,7 @@ httpRequest.onreadystatechange = () => {
       const myResponse = JSON.parse(httpRequest.responseText).response.docs;
       const myBody = document.querySelector('body');
 
-      for (let i = 0; i < myResponse.length; i++) {
+      for (let i = 0; i < myResponse.length; i++){
 
         let myUl = document.createElement('ul');
         let headline = document.createElement('li');
@@ -23,23 +23,23 @@ httpRequest.onreadystatechange = () => {
         myUl.appendChild(headline);
         myUl.appendChild(snippet);
         myUl.appendChild(publicationDate);
-
-
+        
+         
         let myATag = document.createElement('a');
         myATag.setAttribute('href', myResponse[i].web_url)
         myATag.innerText = myResponse[i].headline.main;
 
         headline.appendChild(myATag);
-
+        
         snippet.innerText = myResponse[i].snippet;
 
-        if (typeof myResponse[i].pub_date !== 'undefined') {
-          publicationDate.innerText = myResponse[i].pub_date.slice(0, 10);
+        if (typeof myResponse[i].pub_date !== 'undefined'){
+          publicationDate.innerText = myResponse[i].pub_date.slice(0,10);
         } else {
           publicationDate.innerText = myResponse[i].pub_date
         }
-      }
-
+        }
+     
     }
   }
 };
