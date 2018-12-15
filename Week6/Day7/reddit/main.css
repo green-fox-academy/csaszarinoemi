@@ -51,7 +51,7 @@ body{
 }
 
 .allPosts {
-width: 58%;
+width: 55%;
 height: 98%;
 margin: 1%;
 background-color: rgb(219, 207, 155);
@@ -61,6 +61,7 @@ opacity: 0.6;
 .post {
   display: flex;
   background-color: beige;
+  margin: 10px;
 }
 
 .votingButton {
@@ -95,6 +96,11 @@ opacity: 0.6;
   padding: 5px;
 }
 
+.titleLink{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .text {
   width: 100%;
@@ -119,7 +125,6 @@ opacity: 0.6;
 }
 
 .about{
-  height: 90%;
   margin: 1px;
   background-color: beige;
   padding: 5px;
