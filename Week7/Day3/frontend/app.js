@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express();
 const path = require('path');
+const bodyParser = require('body-parser');
 
 const PORT = 8080;
 
 app.use('/assets', express.static('assets'));
+app.use(bodyParser()); //body parser
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
@@ -37,17 +39,53 @@ app.get('/greeter', (req, res) => {
 })
 
 app.get('/appenda/:appendable', (req, res) => {
-  const valami = req.params.appendable;
-  if (valami) {
+  const { appendable } = req.params;
+  if (appendable) {
     res.json({
-      "appended": `${valami}a`
+      "appended": `${appendable}a`
     });
   } else {
-    res.json(404);
+    res.json(404); //vagy res.status(404).send
+  }
+})
+
+app.post("/dountil/:action", (req, res) => {
+  const action = req.params.action;
+  const numUntil = req.body.until;
+
+  if (action === 'sum') {
+    res.json({
+      "result": summing(numUntil)
+    });
+  } else if (action === 'factor') {
+    res.json({
+      "result": factoring(numUntil)
+    }); 
+  } else {
+    res.json({
+      "error": "Please provide a number!"
+    })
   }
 })
 
 
+const summing = (numUntil) => {
+  let result = 0;
+  for (let i = 0; i <= numUntil; i++) {
+    result += i;
+  } return result;
+}
+
+
+
+const factoring = (numUntil) => {
+  let result = 1;
+  for (let i = 1; i <= numUntil; i++) {
+    result *= i;
+  } return result;
+}
+console.log(factoring());
+
 app.listen(PORT, () => {
-  console.log('Application is listening on port 8080');
+  console.log(`App is listening on port: ${PORT}`);
 })
