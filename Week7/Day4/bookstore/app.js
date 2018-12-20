@@ -8,7 +8,7 @@ const app = express();
 // Static module
 app.use(express.static(__dirname));
 
-app.get('/', (req,res) => res.sendFile(__dirname + '/index.html'))
+app.get('/', (req, res) => res.sendFile(__dirname + '/index.html'))
 
 app.use(express.json());
 
@@ -34,7 +34,7 @@ WHERE book_mast.aut_id = author.aut_id
 AND book_mast.cate_id = category.cate_id
 AND book_mast.pub_id = publisher.pub_id`;
 
-
+//get the table infos
 app.get('/books', (request, response) => {
   conn.query(getAllInfos, (err, data) => {
     if (err) {
@@ -43,6 +43,4 @@ app.get('/books', (request, response) => {
     response.status(200).send(data);
   });
 });
-
-
 
