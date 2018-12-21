@@ -28,19 +28,45 @@ const conn = mysql.createConnection({
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
 
-const getAllInfos = `SELECT book_name, aut_name, cate_descrip, pub_name, book_price 
-FROM book_mast, author, category, publisher
-WHERE book_mast.aut_id = author.aut_id
-AND book_mast.cate_id = category.cate_id
-AND book_mast.pub_id = publisher.pub_id`;
+
 
 //get the table infos
-app.get('/books', (request, response) => {
-  conn.query(getAllInfos, (err, data) => {
-    if (err) {
-      response.status(500).send(err);
-    }
-    response.status(200).send(data);
-  });
-});
+app.get('/books', (req, response) => {
+  
+  //ha kint van akkor globális változó és a változtatások úgy maradnak!!!! mindig ha változik maradjon bent a get-en belül
+  let sqlGetAllInfos = `SELECT book_name, aut_name, cate_descrip, pub_name, book_price 
+  FROM book_mast, author, category, publisher
+  WHERE book_mast.aut_id = author.aut_id
+  AND book_mast.cate_id = category.cate_id
+  AND book_mast.pub_id = publisher.pub_id`;
 
+
+
+  const { category } = req.query;
+  const { publisher } = req.query;
+
+  if (category) {
+    conn.query(sqlGetAllInfos += ` AND cate_descrip = '${category}'`, (err, data) => {
+      if (err) {
+        response.status(500).send(err);
+      }
+      response.status(200).send(data);
+    });
+
+  } else if (publisher) {
+    conn.query(sqlGetAllInfos += ` AND pub_name = '${publisher}'`, (err, data) => {
+      if (err) {
+        response.status(500).send(err);
+      }
+      response.status(200).send(data);
+    });
+
+  } else {
+    conn.query(sqlGetAllInfos, (err, data) => {
+      if (err) {
+        response.status(500).send(err);
+      }
+      response.status(200).send(data);
+    });
+  }
+});

@@ -20,23 +20,47 @@ httpRequest.onload = () => {
     const thCateDescrip = document.createElement('th');
     const thPubName = document.createElement('th');
     const thBookPrice = document.createElement('th');
+    const filter = document.createElement('div');
+    const categoryLabel = document.createElement('label');
+    const selectCategory = document.createElement('select');
+
+    myResponse.forEach(category => {
+      const categoryOption = document.createElement('option');
+      categoryOption.value = category.cate_descrip;
+      categoryOption.innerText = category.cate_descrip;
+      selectCategory.appendChild(categoryOption);
+    });
+
+
+    filter.classList.add('filter');
+    categoryLabel.classList.add('category');
+    categoryLabel.setAttribute('for', 'selectCategory');
+    selectCategory.setAttribute('id', 'selectCategory');
+
 
     thBookName.textContent = 'Book Title';
     thAutName.textContent = `Author's name`;
     thCateDescrip.textContent = 'Category';
     thPubName.textContent = 'Publisher';
     thBookPrice.textContent = 'Price';
+    categoryLabel.textContent = 'Category';
+
 
     tr.appendChild(thBookName);
     tr.appendChild(thAutName);
     tr.appendChild(thCateDescrip);
     tr.appendChild(thPubName);
-    tr.appendChild(thBookPrice)
+    tr.appendChild(thBookPrice);
+    filter.appendChild(categoryLabel);
+    categoryLabel.appendChild(selectCategory);
 
+
+    document.body.appendChild(filter);
     document.body.appendChild(tr);
 
+
     for (let i = 0; i < myResponse.length; i++) {
-      
+
       const tr = document.createElement('tr');
       const tdBookName = document.createElement('td');
       const tdAutName = document.createElement('td');
@@ -61,3 +85,7 @@ httpRequest.onload = () => {
 
   }
 }
+
+// addEventListener
+// httpRequest.open('GET', HOST);
+// httpRequest.send();
