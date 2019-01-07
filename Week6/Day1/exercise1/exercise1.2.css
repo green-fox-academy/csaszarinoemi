@@ -25,3 +25,10 @@
   background-color: purple;
   flex-grow: 1
 }
+
+@media screen and (max-width: 700px){
+  .container{
+     flex-direction: column;
+  }
+ 
+}
