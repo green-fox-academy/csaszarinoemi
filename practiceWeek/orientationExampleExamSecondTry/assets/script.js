@@ -2,12 +2,12 @@
 
 const xhr = new XMLHttpRequest();
 
-let res = {}; 
+let res = {};
 
 xhr.open('GET', '/alias');
 xhr.onload = () => {
   if (xhr.status === 200) {
-     res = JSON.parse(xhr.responseText);
+    res = JSON.parse(xhr.responseText);
     console.log(res);
   }
 }
@@ -16,9 +16,6 @@ xhr.send();
 const form = document.querySelector('form');
 const urlEntry = document.querySelector('#url');
 const aliasEntry = document.querySelector('#alias');
-const p = document.querySelector('p');
-
-
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -29,14 +26,31 @@ form.addEventListener('submit', (event) => {
   });   //egy arraybe gyűjtöm a hasznalt alieseket
   console.log(usedAliases);
 
-  // const postXHR = new XMLHttpRequest();
-  // postXhR.open('POST', '/api/links');
-  // postXhR.setRequestHeader('Content-Type', 'application/json');
-  // postXhR.send(JSON.stringify({
-  //   url: urlEntry.value,
-  //   alias: aliasEntry.value
-  // }));
-  // postXhR.onload = () => {
-  //   console.log(JSON.parse(postXhR.responseText));
-  // }
-})
+  let isInUse = usedAliases.includes(aliasEntry.value);
+  let p = document.querySelector('p');
+
+  
+
+  if (!isInUse) {
+    const postXHR = new XMLHttpRequest();
+    postXHR.open('POST', '/api/links');
+    postXHR.setRequestHeader('Content-Type', 'application/json');
+    postXHR.send(JSON.stringify({
+      url: urlEntry.value,
+      alias: aliasEntry.value
+    }));
+    postXHR.onload = () => {
+      if(postXHR.status === 200){
+        let postResponse = JSON.parse(postXHR.responseText);
+        console.log(postResponse);
+        p.innerText = `Your URL's alias is : ${aliasEntry.value} and your secret code is: ${postResponse[0].secretCode}`;
+        form.reset();
+      }
+      
+    }
+  } else if (isInUse) {
+    p.innerText = `The alias is already used!`
+  }
+
+
+});
