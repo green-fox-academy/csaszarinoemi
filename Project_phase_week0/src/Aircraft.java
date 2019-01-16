@@ -4,8 +4,8 @@ public class Aircraft {
   protected int baseDamage;
   protected boolean isPriority;
 
-  Aircraft(int ammoMax, int baseDamage) {
-    this.isPriority = false;
+  Aircraft(int ammoMax, int baseDamage, boolean isPriority) {
+    this.isPriority = isPriority;
     this.ammoMax = ammoMax;
     this.baseDamage = baseDamage;
   }
