@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82e1a1e4-1092-4d6c-a116-bee202785519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/F16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/F35.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Carrierr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Carrierr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week4/Day6/aircraft2/aircraft2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Week4/Day6/aircraft2/aircraft2.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week6/Day1/exercise1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Week6/Day1/exercise1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week7/Day3/arrayHandler/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Week7/Day3/arrayHandler/app.js" afterDir="false" />
@@ -30,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Aircraft.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,13 +35,13 @@
                 <element signature="e#785#786#0" expanded="true" />
                 <element signature="e#827#828#0" expanded="true" />
                 <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
                 <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
                 <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
                 <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,12 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/F16.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="85">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#73#74#0" expanded="true" />
-                <element signature="e#109#110#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -68,33 +59,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/F35.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="51">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#43#44#0" expanded="true" />
-                <element signature="e#60#61#0" expanded="true" />
+                <element signature="e#72#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="345">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Carrierr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="849">
+            <state relative-caret-position="370">
               <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
               <folding>
                 <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/Carrierr.java" />
         <option value="$PROJECT_DIR$/src/F35.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Hello_World.java" />
       </list>
     </option>
   </component>
@@ -138,31 +130,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="aircraft_carrier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_phase_week0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aircraft_carrier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_phase_week0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547659253769" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547730442491" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_phase_week0_imdb" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -200,46 +178,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547625730502</updated>
-      <workItem from="1547625734762" duration="18283000" />
+      <workItem from="1547625734762" duration="18455000" />
+      <workItem from="1547712701817" duration="2251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18283000" />
+    <option name="totallyTimeSpent" value="20706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24291497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24696356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" weight="0.19715808" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39964476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19715808" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,17 +227,6 @@
     <entry file="file://$PROJECT_DIR$/Project_phase_week0.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Carrierr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Aircraft.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -268,43 +235,57 @@
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#827#828#0" expanded="true" />
             <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
             <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
             <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
             <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/F16.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="85">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#73#74#0" expanded="true" />
-            <element signature="e#109#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/F35.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="51">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#43#44#0" expanded="true" />
-            <element signature="e#60#61#0" expanded="true" />
+            <element signature="e#72#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="345">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hello_World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Carrierr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

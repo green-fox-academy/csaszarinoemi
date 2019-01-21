@@ -23,12 +23,12 @@ export class Aircraft {
     let remainigAmmo: number = 0
     if (input + this.currentAmmo > this.ammoMax) {
       missingAmo = this.ammoMax - this.currentAmmo;
-      this.currentAmmo = this.ammoMax
-      remainigAmmo = input - missingAmo
+      this.currentAmmo = this.ammoMax;
+      remainigAmmo = input - missingAmo;
     } else {
       this.currentAmmo += input;
-      remainigAmmo = input - missingAmo
-    } return missingAmo
+      remainigAmmo = input - missingAmo;
+    } return remainigAmmo;
   } 
 
   getType(): string {

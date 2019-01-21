@@ -84,3 +84,4 @@ console.log(ferihegy2.getStatus());
 ferihegy.fight(ferihegy2);
 console.log(ferihegy.getStatus());
 console.log(ferihegy2.getStatus());
+

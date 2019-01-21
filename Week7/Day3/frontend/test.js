@@ -1,9 +1,17 @@
-let numUntil = 4;
 
-const factoring = () => {
-  let result = 1;
-    for (let i = 1; i <= numUntil; i++) {
-      result *= i;
-    } return result;
-  } 
-console.log(factoring());
+const sithTranslater = (testSentence) => {
+  let newArray = [];
+  let sithArray = testSentence.toLowerCase().split(' ').join().split('.');
+  console.log(sithArray);
+  /*for (let i = 0; i < sithArray.length; i++){
+    if (i === 0) {
+
+    }
+      
+    }
+  }*/
+
+}
+
+let myTestSentence = "This is my example sentence. Just for fun."
+sithTranslater(myTestSentence);
