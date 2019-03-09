@@ -14,18 +14,16 @@ export{};
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
 
-function matrixMaker(input:number):void{
+function matrixMaker(input:number):number[][]{
   let output:number[][] = []
-  for(let i = 0; i < input-1; i++){
+  for(let i = 0; i < input; i++){
     output[i]=[];
-    for (let j = 0; j < input-1; j++){
-      if (j=i){
+    for (let j = 0; j < input; j++){
+      if (j+i===input-1){
         output[i][j]=1;
       } else {
         output[i][j]=0
       }
     }
-  } console.log(output)
+  } return output
 }
-
-matrixMaker(4);
